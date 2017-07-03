@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ricochet.penetest.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/request_basic"
+                android:textColor="@color/black"
+                android:background="@color/lightRed"
+                android:gravity="center"
+                android:text="基本信息"
+                android:layout_margin="@dimen/margin"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+            <Button
+                android:id="@+id/request_whois"
+                android:textColor="@color/black"
+                android:background="@color/lightBlue"
+                android:gravity="center"
+                android:text="WHOIS信息"
+                android:layout_margin="@dimen/margin"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+            <Button
+                android:id="@+id/request_port"
+                android:textColor="@color/black"
+                android:background="@color/lightYellow"
+                android:gravity="center"
+                android:text="开放端口"
+                android:layout_margin="@dimen/margin"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:background="@color/lightRed"
+                android:gravity="center"
+                android:layout_margin="@dimen/margin"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical">
+                <ProgressBar
+                    android:id="@+id/basic_process"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:id="@+id/basic_infor"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/lightBlue"
+                android:gravity="center"
+                android:layout_margin="@dimen/margin"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" >
+                <ProgressBar
+                    android:layout_gravity="center"
+                    android:id="@+id/whois_process"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:id="@+id/whois_infor"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/lightYellow"
+                android:gravity="center"
+                android:layout_margin="@dimen/margin"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" >
+                <ProgressBar
+                    android:id="@+id/port_process"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:maxLines="8"
+                    android:scrollbars="vertical"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:id="@+id/port_infor"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

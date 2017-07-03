@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_start"
+            android:icon="@drawable/play"
+            android:title="开始使用" />
+        <item
+            android:id="@+id/nav_information"
+            android:icon="@drawable/magnifier"
+            android:title="信息收集" />
+        <item
+            android:id="@+id/nav_vulnerability"
+            android:icon="@drawable/rotate"
+            android:title="漏洞分析" />
+        <item
+            android:id="@+id/nav_attack"
+            android:icon="@drawable/locate"
+            android:title="模拟攻击" />
+
+    </group>
+
+    <item android:title="其他">
+        <menu>
+
+            <item
+                android:id="@+id/nav_declaration"
+                android:icon="@drawable/document"
+                android:title="免责声明" />
+
+            <item android:title="退出应用"
+                android:id="@+id/nav_quit"
+                android:icon="@drawable/exit">
+            </item>
+        </menu>
+    </item>
+
+</menu>

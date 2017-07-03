@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">渗透测试助手</string>
+
+    <string name="navigation_drawer_open">开启导航栏</string>
+    <string name="navigation_drawer_close">关闭导航栏</string>
+    <string name="navigation_title">渗透测试助手</string>
+    <string name="navigation_subtitle">Ricochet团队出品</string>
+    <string name="first_content">请点击右下角按钮输入您要测试的域名地址</string>
+
+    <string name="declaration_1">本软件为学习使用，开发的服务目标范围是个人博客主或小型网站管理者，
+        使用者可以通过此软件对自己的网站和主机进行信息收集和简单的安全测试。
+    </string>
+    <string name="declaration_2">请勿在未经许可的情况下向其他主机和网站进行攻击测试，
+        产生的法律后果由使用者自己承担。</string>
+    <string name="declaration_3">本软件的部分功能使用到了遵守GPL协议的nmap和nikto。</string>
+</resources>
